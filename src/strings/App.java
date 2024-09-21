@@ -29,8 +29,14 @@ public class  App {
 
         String end = "life is but a";
         //end = String.format("%s %s %s %s, %s %s", adverb, adverb, adverb, adverb, end, noun3);
-        end = String.format("%1$s %1$s %1$s %1$s %2$s %3$s%n", adverb, end, noun3);
+        end = String.format("%1$s, %1$s, %1$s, %1$s, %2$s %3$s%n", adverb, end, noun3);
         // --> The last %n is for new line. The 1$ is for numbering your variables directly in the format method.
+
+        //Uppercasing the first letter of beginning middle and end
+        beginning = Character.toUpperCase(beginning.charAt(0)) + beginning.substring(1);
+        middle = Character.toUpperCase(middle.charAt(0)) + middle.substring(1);
+        end = end.substring(0, 1).toUpperCase() + end.substring(1);
+        // --> With end we use string to uppercase a 1 char String...
 
         System.out.println("Your Song: ");
         System.out.println(beginning + middle + end);
