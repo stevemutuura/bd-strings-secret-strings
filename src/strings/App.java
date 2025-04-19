@@ -43,3 +43,5 @@ public class App {
         System.out.println(beginning + middle + end);
     }
 }
+
+// Added a comment here: To rest my github credential manager to see if it is working
